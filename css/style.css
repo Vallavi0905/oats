@@ -1,0 +1,459 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-attachment: fixed;
+  font-family: Tahoma, "Trebuchet MS", sans-serif;
+}
+
+h1{
+  color: red;
+    font-size: 4vw;
+}
+</*  log and nav area 1 */>
+
+.leftside{
+width: 30%;
+height: auto;
+overflow: hidden;
+margin-top: 30px;
+}
+
+.leftside img{
+  width: 60%;
+  position: relative;
+
+}
+
+.rightside li{
+  list-style-type: none;
+  font-size:2.5vw;
+}
+
+.item3 ul{
+  font-size: 4vw;
+  float: right;
+  list-style: none;
+  margin-bottom: 35%;
+  text-align:left
+}
+
+.navbar-light .navbar-nav .nav-link {
+color: white;
+font-family: Tahoma, "Trebuchet MS", sans-serif;
+font-size: 1.5vw;
+
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+color: yellow;
+font-family: Tahoma, "Trebuchet MS", sans-serif;
+font-size: 1.5vw;
+
+}
+
+/* Feature 5 */
+.content {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.feature4{
+  height:100vh;
+}
+.heading {
+  width: 100%;
+  margin-left: 1rem;
+  font-weight: 1000;
+  letter-spacing: 0.1ch;
+  line-height: 1;
+  padding-bottom: 0.5em;
+  margin-bottom: 1rem;
+  position: relative;
+  color: red;
+  font-family: 'Comic Neue', cursive;
+  text-align: center;
+}
+.heading:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  bottom: 0;
+}
+
+.description {
+  width: 100%;
+  margin-top: 0;
+  margin-left: 1rem;
+  margin-bottom: 3rem;
+}
+
+
+
+.card {
+  color: inherit;
+  cursor: pointer;
+  width: calc(33% - 2rem);
+  min-width: calc(33% - 2rem);
+  height: 400px;
+  min-height: 400px;
+  perspective: 1000px;
+  margin: 1rem;
+  position: relative;
+
+}
+
+.card-title{
+  font-family: 'Comic Neue', cursive;
+  text-align: center;
+  color:#ffff;
+  position: inherit;
+  font-size: 1.8rem;
+  padding-top: 61%;
+   text-decoration: none;
+
+}
+
+
+.front,
+.back {
+  display: flex;
+  border-radius: 6px;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: ease-in-out 600ms;
+   text-decoration: none;
+}
+
+.front {
+  background-size: cover;
+  padding: 2rem;
+  font-size: 1.618rem;
+  font-weight: 600;
+  color: #fff;
+  overflow: hidden;
+  font-family: Poppins, sans-serif;
+}
+.front:before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient();
+  opacity: 0.25;
+  z-index: ;
+}
+.card:hover .front {
+  transform: rotateY(180deg);
+   text-decoration: none;
+}
+.card:nth-child(even):hover .front {
+  transform: rotateY(-180deg);
+}
+
+.back {
+  background: #fff;
+  transform: rotateY(-180deg);
+  padding: 0 2em;
+
+}
+
+.card:hover .back {
+  transform: rotateY(0deg);
+   text-decoration: none;
+}
+.card:nth-child(even) .back {
+  transform: rotateY(180deg);
+}
+.card:nth-child(even) .back .button {
+  background: linear-gradient(135deg, #e61a80, #e61a3c);
+}
+.card:nth-child(even) .back .button:before {
+  box-shadow: 0 0 10px 10px rgba(230, 26, 60, 0.25);
+  background-color: rgba(230, 26, 60, 0.25);
+}
+.card:nth-child(even):hover .back {
+  transform: rotateY(0deg);
+   text-decoration: none;
+}
+
+
+
+
+
+
+/*Testimonials */
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+  font-size:1.5rem;
+  list-style-type: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 50px;
+    background: #ffc;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: red;}
+.author1{
+  color:grey;
+}
+
+
+ /* Footer */
+
+ .card1 {
+     position: relative;
+     display: flex;
+     width: 1000px;
+     flex-direction: column;
+     min-width: 0;
+     word-wrap: break-word;
+     background-color: #fff;
+     background-clip: border-box;
+     border: 1px solid #d2d2dc;
+     border-radius: 11px;
+     -webkit-box-shadow: 0px 0px 5px 0px rgb(249, 249, 250);
+     -moz-box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1);
+     box-shadow: 0px 0px 5px 0px rgb(161, 163, 164)
+ }
+
+ .card1 .card1-body {
+     padding: 1rem 1rem
+ }
+
+ .card1-body {
+     flex: 1 1 auto;
+     padding: 1.25rem
+ }
+
+ p {
+     font-size: 0.875rem;
+     margin-bottom: .5rem;
+     line-height: 1.5rem
+ }
+
+ h4 {
+     line-height: .2 !important
+ }
+
+ .items {
+     width: 90%;
+     margin: 0px auto;
+     margin-top: 100px
+ }
+
+ .slick-slide {
+     margin: 20px
+ }
+
+ .media iframe,
+ .media-content {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     border: 0;
+     border-radius: inherit;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: 50% 50%;
+     background-color: rgba(120, 120, 120, .1);
+     display: flex;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     align-items: center
+ }
+
+ .media-content:before {
+     content: '';
+     position: absolute;
+     height: 10%;
+     width: 90%;
+     left: 5%;
+     bottom: 0;
+     background: inherit;
+     background-position-y: 100%;
+     filter: blur(10px)
+ }
+
+ .circle .media-content:before {
+     width: 40%;
+     left: 30%
+ }
+
+ .profile-image {
+     width: 100%;
+     height: 200px;
+     border-top-left-radius: 11px !important;
+     border-top-right-radius: 11px
+ }
+
+.item-title p{
+  font-size: 2vw;
+  text-align: left;
+  color: white;
+  font-family: 'Comic Neue', cursive;
+
+}
+
+.item-title span{
+  font-size: 3rem;
+  text-align: left;
+  color: yellow;
+  font-family: 'Comic Neue', cursive;
+}
+
+ .card1-title {
+     font-size: 19px;
+     font-weight: 200
+ }
+ .mvBack{
+   background: red;
+   opacity:.9999;
+   padding:10%;
+ }
+
+ .mv{
+   position:relative;
+ }
+
+ .social-icons{
+   text-align: right;
+   position: inline;
+ }
+
+ .social-icons li{
+   text-align: right;
+   list-style-type: none;
+ }
+
+
+/*  responsive media queris  */
+
+ @media (max-width:991.98px) {
+      .padding {
+          padding: 1.5rem
+      }
+  }
+
+  @media (max-width:767.98px) {
+      .padding {
+          padding: 1rem
+      }
+
+      .col-6 {width: 50%;}
+      .col-4 {width: 33.33%;}
+  .padding {
+      padding: 5rem
+  }
+
+ }
+
+ @media screen and (max-width: 800px) {
+   .card {
+     width: calc(50% - 2rem);
+   }
+   .feature4 {
+       height: 54vh;
+   }
+ }
+ @media screen and (max-width: 500px) {
+   .card {
+     width: 100%;
+   }
+ }
